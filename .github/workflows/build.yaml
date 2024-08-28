@@ -20,8 +20,8 @@ jobs:
           distribution: 'zulu'
           java-version: '17'
           cache: 'gradle'
-      - uses: malinskiy/action-android/install-sdk@release/0.1.3
-      - uses: malinskiy/action-android/emulator-run-cmd@release/0.1.3
+      - uses: malinskiy/action-android/install-sdk@release/0.1.6
+      - uses: malinskiy/action-android/emulator-run-cmd@release/0.1.6
         with:
           cmd: ./gradlew connectedCheck
           tag: default
